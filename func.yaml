@@ -9,7 +9,7 @@ invocation:
   format: http
 build:
   buildpacks: []
-  builder: ""
+  builder: s2i
   buildEnvs:
   - name: BP_NATIVE_IMAGE
     value: "false"

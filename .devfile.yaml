@@ -7,4 +7,7 @@ components:
   - name: devtools
     container:
       image: registry.redhat.io/devspaces/udi-rhel8:3.9
-      memoryRequest: 256Mi
+      memoryRequest: 256M
+      env:
+        - name: PATH
+          value: /projects/bin

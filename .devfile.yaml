@@ -6,6 +6,6 @@ attributes:
 components:
   - name: devtools
     container:
-      image: quay.io/devfile/universal-developer-image:ubi8-latest
+      image: registry.redhat.io/devspaces/udi-rhel8:3.9
       memoryLimit: 2Gi
       memoryRequest: 256Mi

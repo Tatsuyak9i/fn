@@ -1,0 +1,13 @@
+schemaVersion: 2.1.0
+metadata:
+  name: developer-images
+attributes:
+  controller.devfile.io/scc: container-build
+components:
+  - name: devtools
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel8:3.9
+      memoryRequest: 256M
+      env:
+        - name: PATH
+          value: /projects/bin:/usr/share/Modules/bin:/home/user/.local/bin:/home/user/.java/current/bin:/home/user/node_modules/.bin/:/home/user/.npm-global/bin/:/opt/app-root/src/.npm-global/bin/:/usr/share/maven/bin:/usr/bin:/home/user/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.dotnet/tools
